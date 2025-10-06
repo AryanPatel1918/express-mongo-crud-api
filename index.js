@@ -27,7 +27,7 @@ mongoose.connect(process.env.MONGO_URI)
 /*
 async function connectDB() {
     try {
-        await mongoose.connect("mongodb+srv://aryanpatel1918:gPROe8dKOw3bgPc6@cluster0.rvpug2j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+        await mongoose.connect(process.env.MONGO_URI)
         console.log("MongoDB connected successfully!")
         app.listen(3000, () => {
             console.log("Server is running on port 3000")
